@@ -7,6 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		430F2BA31BA8833200073E5A /* ioapi_mem.c in Sources */ = {isa = PBXBuildFile; fileRef = D1D11D5F1B7CD12500EFFCA4 /* ioapi_mem.c */; };
+		430F2BA41BA8833200073E5A /* ioapi.c in Sources */ = {isa = PBXBuildFile; fileRef = D1D11D611B7CD12600EFFCA4 /* ioapi.c */; };
+		430F2BA51BA8833200073E5A /* zip.c in Sources */ = {isa = PBXBuildFile; fileRef = D1D11D691B7CD12600EFFCA4 /* zip.c */; };
+		430F2BA61BA8833200073E5A /* unzip.c in Sources */ = {isa = PBXBuildFile; fileRef = D1D11D671B7CD12600EFFCA4 /* unzip.c */; };
+		430F2BA71BA8833200073E5A /* LOZIPFileWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = D1D11D901B7CD2D900EFFCA4 /* LOZIPFileWrapper.m */; };
+		430F2BA91BA8833200073E5A /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D1D11D921B7CD4BB00EFFCA4 /* libz.dylib */; };
+		430F2BAB1BA8833200073E5A /* ioapi_buf.h in Headers */ = {isa = PBXBuildFile; fileRef = D1D11D5E1B7CD12500EFFCA4 /* ioapi_buf.h */; };
+		430F2BAC1BA8833200073E5A /* ioapi_mem.h in Headers */ = {isa = PBXBuildFile; fileRef = D1D11D601B7CD12500EFFCA4 /* ioapi_mem.h */; };
+		430F2BAD1BA8833200073E5A /* crypt.h in Headers */ = {isa = PBXBuildFile; fileRef = D1D11D5C1B7CD12500EFFCA4 /* crypt.h */; };
+		430F2BAE1BA8833200073E5A /* iowin32.h in Headers */ = {isa = PBXBuildFile; fileRef = D1D11D641B7CD12600EFFCA4 /* iowin32.h */; };
+		430F2BAF1BA8833200073E5A /* unzip.h in Headers */ = {isa = PBXBuildFile; fileRef = D1D11D681B7CD12600EFFCA4 /* unzip.h */; };
+		430F2BB01BA8833200073E5A /* LOZIPFileWrapper.h in Headers */ = {isa = PBXBuildFile; fileRef = D1D11D2D1B7CCF3500EFFCA4 /* LOZIPFileWrapper.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		430F2BB11BA8833200073E5A /* ioapi.h in Headers */ = {isa = PBXBuildFile; fileRef = D1D11D621B7CD12600EFFCA4 /* ioapi.h */; };
+		430F2BB21BA8833200073E5A /* zip.h in Headers */ = {isa = PBXBuildFile; fileRef = D1D11D6A1B7CD12600EFFCA4 /* zip.h */; };
 		D121DD6E1B7F32F5003EA0AA /* Empty in Resources */ = {isa = PBXBuildFile; fileRef = D121DD6C1B7F32F5003EA0AA /* Empty */; };
 		D121DD6F1B7F32F5003EA0AA /* HelloWorld.txt in Resources */ = {isa = PBXBuildFile; fileRef = D121DD6D1B7F32F5003EA0AA /* HelloWorld.txt */; };
 		D1D11D2E1B7CCF3500EFFCA4 /* LOZIPFileWrapper.h in Headers */ = {isa = PBXBuildFile; fileRef = D1D11D2D1B7CCF3500EFFCA4 /* LOZIPFileWrapper.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -40,6 +54,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		430F2BB71BA8833200073E5A /* LOZIPFileWrapper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LOZIPFileWrapper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D121DD6C1B7F32F5003EA0AA /* Empty */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Empty; path = Resources/Empty; sourceTree = "<group>"; };
 		D121DD6D1B7F32F5003EA0AA /* HelloWorld.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = HelloWorld.txt; path = Resources/HelloWorld.txt; sourceTree = "<group>"; };
 		D1D11D281B7CCF3500EFFCA4 /* LOZIPFileWrapper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LOZIPFileWrapper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -70,6 +85,14 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		430F2BA81BA8833200073E5A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				430F2BA91BA8833200073E5A /* libz.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D1D11D241B7CCF3500EFFCA4 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -104,6 +127,7 @@
 			children = (
 				D1D11D281B7CCF3500EFFCA4 /* LOZIPFileWrapper.framework */,
 				D1D11D331B7CCF3600EFFCA4 /* LOZIPFileWrapperTests.xctest */,
+				430F2BB71BA8833200073E5A /* LOZIPFileWrapper.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -181,6 +205,21 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		430F2BAA1BA8833200073E5A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				430F2BAB1BA8833200073E5A /* ioapi_buf.h in Headers */,
+				430F2BAC1BA8833200073E5A /* ioapi_mem.h in Headers */,
+				430F2BAD1BA8833200073E5A /* crypt.h in Headers */,
+				430F2BAE1BA8833200073E5A /* iowin32.h in Headers */,
+				430F2BAF1BA8833200073E5A /* unzip.h in Headers */,
+				430F2BB01BA8833200073E5A /* LOZIPFileWrapper.h in Headers */,
+				430F2BB11BA8833200073E5A /* ioapi.h in Headers */,
+				430F2BB21BA8833200073E5A /* zip.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D1D11D251B7CCF3500EFFCA4 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -199,6 +238,24 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		430F2BA11BA8833200073E5A /* LOZIPFileWrapper-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 430F2BB41BA8833200073E5A /* Build configuration list for PBXNativeTarget "LOZIPFileWrapper-iOS" */;
+			buildPhases = (
+				430F2BA21BA8833200073E5A /* Sources */,
+				430F2BA81BA8833200073E5A /* Frameworks */,
+				430F2BAA1BA8833200073E5A /* Headers */,
+				430F2BB31BA8833200073E5A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "LOZIPFileWrapper-iOS";
+			productName = LOZIPFileWrapper;
+			productReference = 430F2BB71BA8833200073E5A /* LOZIPFileWrapper.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		D1D11D271B7CCF3500EFFCA4 /* LOZIPFileWrapper */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = D1D11D3E1B7CCF3600EFFCA4 /* Build configuration list for PBXNativeTarget "LOZIPFileWrapper" */;
@@ -266,11 +323,19 @@
 			targets = (
 				D1D11D271B7CCF3500EFFCA4 /* LOZIPFileWrapper */,
 				D1D11D321B7CCF3600EFFCA4 /* LOZIPFileWrapperTests */,
+				430F2BA11BA8833200073E5A /* LOZIPFileWrapper-iOS */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		430F2BB31BA8833200073E5A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D1D11D261B7CCF3500EFFCA4 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -292,6 +357,18 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		430F2BA21BA8833200073E5A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				430F2BA31BA8833200073E5A /* ioapi_mem.c in Sources */,
+				430F2BA41BA8833200073E5A /* ioapi.c in Sources */,
+				430F2BA51BA8833200073E5A /* zip.c in Sources */,
+				430F2BA61BA8833200073E5A /* unzip.c in Sources */,
+				430F2BA71BA8833200073E5A /* LOZIPFileWrapper.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D1D11D231B7CCF3500EFFCA4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -323,6 +400,44 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		430F2BB51BA8833200073E5A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = "$(SRCROOT)/LOZIPFileWrapper/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = LOZIPFileWrapper;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		430F2BB61BA8833200073E5A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = "$(SRCROOT)/LOZIPFileWrapper/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = LOZIPFileWrapper;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 		D1D11D3C1B7CCF3600EFFCA4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -475,6 +590,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		430F2BB41BA8833200073E5A /* Build configuration list for PBXNativeTarget "LOZIPFileWrapper-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				430F2BB51BA8833200073E5A /* Debug */,
+				430F2BB61BA8833200073E5A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		D1D11D221B7CCF3500EFFCA4 /* Build configuration list for PBXProject "LOZIPFileWrapper" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
