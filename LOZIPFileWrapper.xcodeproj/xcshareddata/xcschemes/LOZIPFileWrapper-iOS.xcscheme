@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "430F2BA11BA8833200073E5A"
-               BuildableName = "LOZIPFileWrapper-iOS.framework"
+               BuildableName = "LOZIPFileWrapper.framework"
                BlueprintName = "LOZIPFileWrapper-iOS"
                ReferencedContainer = "container:LOZIPFileWrapper.xcodeproj">
             </BuildableReference>
@@ -46,7 +46,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "430F2BA11BA8833200073E5A"
-            BuildableName = "LOZIPFileWrapper-iOS.framework"
+            BuildableName = "LOZIPFileWrapper.framework"
             BlueprintName = "LOZIPFileWrapper-iOS"
             ReferencedContainer = "container:LOZIPFileWrapper.xcodeproj">
          </BuildableReference>
@@ -64,7 +64,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "430F2BA11BA8833200073E5A"
-            BuildableName = "LOZIPFileWrapper-iOS.framework"
+            BuildableName = "LOZIPFileWrapper.framework"
             BlueprintName = "LOZIPFileWrapper-iOS"
             ReferencedContainer = "container:LOZIPFileWrapper.xcodeproj">
          </BuildableReference>
